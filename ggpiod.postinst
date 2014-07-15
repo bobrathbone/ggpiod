@@ -1,0 +1,7 @@
+#!/bin/bash
+# Garage door controller post installation script
+# $Id: ggpiod.postinst,v 1.2 2014/06/18 17:08:33 bob Exp $
+set -e
+cd /etc/init.d
+echo "Enabling ggpiod daemon"
+update-rc.d -f ggpiod defaults 
